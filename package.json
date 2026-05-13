@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Ejercicio práctico para presentación de GitHub",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   },
   "devDependencies": {
     "vite": "^5.2.0"
