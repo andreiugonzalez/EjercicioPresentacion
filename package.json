@@ -1,0 +1,11 @@
+{
+  "name": "ejercicio-presentacion",
+  "version": "1.0.0",
+  "description": "Ejercicio práctico para presentación de GitHub",
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}

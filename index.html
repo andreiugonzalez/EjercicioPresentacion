@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de GitHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background glowing orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <main class="container">
+        <div class="glass-card">
+            <!-- Título de la actividad -->
+            <span class="title">Ejercicio Práctico Git</span>
+            
+            <!-- Saludo principal -->
+            <h1 class="greeting">¡Hola compañeros! 👋</h1>
+            
+            <!-- Instrucciones -->
+            <p class="subtitle">
+                Bienvenidos a esta demostración colaborativa de GitHub.
+                <br><br>
+                <strong style="color: #E5E7EB;">Tu misión:</strong><br>
+                1. Clona el proyecto.<br>
+                2. Edita este texto en <code>index.html</code>.<br>
+                3. Haz un <em>commit</em> y <em>push</em>.<br>
+                4. ¡Verificaremos tus cambios en vivo!
+            </p>
+            
+            <button class="demo-button" onclick="celebrate()">¡Estamos listos!</button>
+        </div>
+    </main>
+
+    <script>
+        // Un pequeño script para darle interactividad al botón
+        function celebrate() {
+            const btn = document.querySelector('.demo-button');
+            btn.textContent = "¡A programar! 🚀";
+            btn.style.background = "linear-gradient(45deg, #10B981, #059669)";
+            btn.style.boxShadow = "0 6px 20px rgba(16, 185, 129, 0.6)";
+            
+            // Volver a la normalidad después de 3 segundos
+            setTimeout(() => {
+                btn.textContent = "¡Estamos listos!";
+                btn.style.background = "";
+                btn.style.boxShadow = "";
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
